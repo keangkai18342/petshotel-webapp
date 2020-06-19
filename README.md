@@ -3,6 +3,8 @@ frontend - angular
 
 
 Run : npm install
+
+
       ng serve --open
 
 
