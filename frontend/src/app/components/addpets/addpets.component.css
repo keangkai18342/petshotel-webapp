@@ -1,0 +1,175 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #0c0b09;
+    color: #fff;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", serif;
+  }
+
+  .w3-btn {width:150px;}
+  .btns {
+    margin-top: auto;
+    margin-left: 200px;
+  }
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .section-bg {
+    background-color: #1a1814;
+  }
+  
+  .section-title {
+    padding-bottom: 40px;
+    padding-top: 100px;
+  }
+  
+  .section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 4px 10px;
+  }
+  
+  .section-title p {
+    margin: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    color: #cda45e;
+  }
+
+
+
+  /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400');
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+nav
+{
+    height: 44px;
+    background: #000000;
+}
+.menu
+{
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    overflow: hidden;
+}
+.menu ul
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.menu ul li
+{
+    list-style: none;
+}
+.menu ul li,
+.menu ul li a
+{
+   color: #ffffff;
+   line-height: 44px; 
+   text-decoration: none;
+}
+.menu ul li .fa.fa-paw
+{
+    font-size: 28px;
+}
+
+.menu ul li a.menu-item
+{
+    transform: scale(1);
+    transition: 0.5s;
+    display: block;
+}
+.menu ul li a.menu-item.hide-item
+{
+    transform: scale(0);
+} 
+.menu ul li:nth-child(2) a.menu-item.hide-item
+{
+    transition-delay: 0.6s;
+}
+.menu ul li:nth-child(3) a.menu-item.hide-item
+{
+    transition-delay: 0.5s;
+}
+.menu ul li:nth-child(4) a.menu-item.hide-item
+{
+    transition-delay: 0.4s;
+}
+.menu ul li:nth-child(5) a.menu-item.hide-item
+{
+    transition-delay: 0.3s;
+}
+.menu ul li:nth-child(6) a.menu-item.hide-item
+{
+    transition-delay: 0.2s;
+}
+.menu ul li:nth-child(7) a.menu-item.hide-item
+{
+    transition-delay: 0.1s;
+}
+.menu ul li:nth-child(8) a.menu-item.hide-item
+{
+    transition-delay: 0s;
+}
+
+
+.menu ul li:nth-child(2) a.menu-item
+{
+    transition-delay: 0s;
+}
+.menu ul li:nth-child(3) a.menu-item
+{
+    transition-delay: 0.1s;
+}
+.menu ul li:nth-child(4) a.menu-item
+{
+    transition-delay: 0.2s;
+}
+.menu ul li:nth-child(5) a.menu-item
+{
+    transition-delay: 0.3s;
+}
+.menu ul li:nth-child(6) a.menu-item
+{
+    transition-delay: 0.4s;
+}
+.menu ul li:nth-child(7) a.menu-item
+{
+    transition-delay: 0.5s;
+}.menu ul li:nth-child(8) a.menu-item
+{
+    transition-delay: 0.6s;
+}

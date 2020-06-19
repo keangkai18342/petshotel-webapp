@@ -1,0 +1,89 @@
+<html>
+<body>
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Owner</h2>
+            <p>MY BOOKINGS</p>
+          </div>
+
+
+<div class="container">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th>ID.</th>  
+          <th>onwer</th>
+          <th>petsname</th>
+          <th>fristday</th>
+          <th>lastday</th>
+          <th>status</th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of mybookings; index as i">
+          <td scope="row">{{item._id}}</td>
+          <td>{{item.onwer}}</td>
+          <td>{{item.petsname}}</td>
+          <td>{{item.fristday}}</td>
+          <td>{{item.lastday}}</td>
+          <td>{{item.status}} </td>
+          <th><a href="mybookings" class="btn-button" >Inprogress</a></th>
+          <th><a href="mybookings" class="btn-button" >Cancelled</a></th>
+          <th><a href="mybookings" class="btn-button" >Completely</a></th>
+          <th><a  class="btn-button" (click)="delete(item._id)">delete --> {{item._id}}</a></th>
+        </tr>
+
+        
+      </tbody>
+    </table>
+
+
+
+  </div>  
+    </div>
+<br><br><br><br>
+</body>
+
+<!-- nav -->
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<body>
+  <header id="header" class="fixed-top">
+    <nav>
+        <div class="menu">
+          <ul>
+            <li><a href="#"><i class="fa fa-paw"></i></a></li>
+            <li><a href="products" class="menu-item">Home</a></li>
+            <li><a href="addabout" class="menu-item" >Add Food</a></li>
+            <li><a href="about" class="menu-item" >About Food</a></li>
+            <li><a href="addpets" class="menu-item">Add Pets</a></li>
+            <li><a href="mypets" class="menu-item">My Pets</a></li>
+            <li><a href="bookings" class="menu-item">Bookings</a></li>
+            <li><a href="mybookings" class="menu-item">My Bookings</a></li>
+            <li><a href="addemployee" class="menu-item">Add Employee</a></li>
+            <li><a href="viewemployee" class="menu-item">View Employee</a></li>
+            <li><a (click)="signout()" href="#" class="menu-item fa fa-paw">Sign Out</a></li>
+  
+          </ul>
+           
+        </div>
+    </nav>
+  </header>
+</body>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<body>
+  <app-root></app-root>
+</body>
+<!-- end nav -->
+
+</html>
+
+

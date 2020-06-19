@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V18</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="background-color: #666666;">
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form" [formGroup]="authForm">
+                    
+					<span class="login100-form-title p-b-30">
+						Register Pet's Hotel Account
+					</span>
+					
+					
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" formControlName="username">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Username</span>
+					</div>
+					
+					
+					<div class="wrap-input100 validate-input" data-validate="Password is required">
+						<input class="input100" type="password" formControlName="password">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Password</span>
+                    </div>
+                    
+                    <div class="wrap-input100 validate-input" data-validate="Password is required">
+						<input class="input100" type="text" formControlName="name">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Your name</span>
+                    </div>
+                    
+                    <div class="wrap-input100 validate-input" data-validate="Password is required">
+						<input class="input100" type="email" formControlName="email">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Email</span>
+                    </div>
+
+                   
+                    <div class="wrap-input100 validate-input" data-validate="Password is required">
+						<input class="input100" type="number" formControlName="phonenumber">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Phone number</span>
+					</div>
+			
+                    <div class="container-login100-form-btn">
+						<button class="login100-form-btn" (click)="signup()">
+							Sign Up
+						</button>
+                    </div>
+
+                    <div class="text-center">
+                        <a href="#" class="txt1">
+                            back to login page?
+                        </a>
+                    </div>
+                    
+                    
+					
+				</form>
+
+				<div class="login100-more" style="background-image: url('assets/images/bg-01.jpg');">
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

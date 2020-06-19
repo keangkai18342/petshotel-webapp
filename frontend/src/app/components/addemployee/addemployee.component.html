@@ -1,0 +1,105 @@
+<html>
+    
+<body >
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Manager</h2>
+            <p>Add Employee</p>
+          </div>
+        <div class="container">
+          
+                <div class="row">
+                    <div class="col-md-7">
+
+                        <form [formGroup]="empForm">
+
+                            <div class="form-group">
+                                <label>fristname</label>
+                                <input type="text" class="form-control" formControlName='fristname'>
+                            </div>
+
+                            <div class="form-group">
+                              <label>lastname</label>
+                              <input type="text" class="form-control" formControlName='lastname'>
+                          </div>
+
+                          <label>gender</label> <br>
+                          <div class="form-check form-check-inline form-group">
+                              <label class="form-check-label form-group">
+                                  <input class="form-check-input" type="radio"  value="Male" formControlName='gender'> Male
+                              </label>
+                          </div>
+
+                          <div class="form-check form-check-inline">
+                              <label class="form-check-label">
+                                  <input class="form-check-input" type="radio" value="Female" formControlName='gender'> Female
+                              </label>
+                          </div>
+
+                          <div class="form-group">
+                            <label>email</label>
+                            <input type="text" class="form-control" formControlName='email'>
+                        </div>
+
+                        <div class="form-group">
+                          <label>phonenumber</label>
+                          <input type="number" class="form-control" formControlName='phone'>
+                      </div>
+
+                         
+
+                            <br/><br/>
+                            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+                            <div class="btns">
+                         <button type="submit" class="w3-button w3-black w3-round-xlarge" (click)="addemp()" >SAVE PET</button>&nbsp;
+                            <button type="reset" class="w3-button w3-black w3-round-xlarge" >RESET</button>
+                            </div>
+                                <br/><br/> 
+                                <br/><br/>
+                        </form>
+
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+</body>
+<!-- nav -->
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<body>
+  <header id="header" class="fixed-top">
+    <nav>
+        <div class="menu">
+          <ul>
+            <li><a href="#"><i class="fa fa-paw"></i></a></li>
+            <li><a href="products" class="menu-item">Home</a></li>
+            <li><a href="addabout" class="menu-item" >Add Food</a></li>
+            <li><a href="about" class="menu-item" >About Food</a></li>
+            <li><a href="addpets" class="menu-item">Add Pets</a></li>
+            <li><a href="mypets" class="menu-item">My Pets</a></li>
+            <li><a href="bookings" class="menu-item">Bookings</a></li>
+            <li><a href="mybookings" class="menu-item">My Bookings</a></li>
+            <li><a href="addemployee" class="menu-item">Add Employee</a></li>
+            <li><a href="viewemployee" class="menu-item">View Employee</a></li>
+            <li><a (click)="signout()" href="#" class="menu-item fa fa-paw">Sign Out</a></li>
+  
+          </ul>
+           
+        </div>
+    </nav>
+  </header>
+</body>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<body>
+  <app-root></app-root>
+</body>
+<!-- end nav -->
+    
+</html>
+
