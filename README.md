@@ -2,14 +2,16 @@
 frontend - angular
 
 
-Run : npm install
+Run : 
 
-
+      npm install
       ng serve --open
 
 
 backend - express + mongodb
 
 
-Run : nodemon 9-3.js
+Run : 
+
+      nodemon 9-3.js
 
